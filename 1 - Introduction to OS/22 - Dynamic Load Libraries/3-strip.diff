@@ -1,0 +1,83 @@
+--- 1-before-strip	2012-08-29 13:23:58.000000000 +0300
++++ 2-after-strip	2012-08-29 13:23:58.000000000 +0300
+@@ -10,13 +10,13 @@
+   Version:                           0x1
+   Entry point address:               0x67c
+   Start of program headers:          64 (bytes into file)
+-  Start of section headers:          4440 (bytes into file)
++  Start of section headers:          4424 (bytes into file)
+   Flags:                             0x0
+   Size of this header:               64 (bytes)
+   Size of program headers:           56 (bytes)
+   Number of program headers:         7
+   Size of section headers:           64 (bytes)
+-  Number of section headers:         28
++  Number of section headers:         26
+   Section header string table index: 25
+ 
+ Section Headers:
+@@ -73,11 +73,7 @@
+   [24] .comment          PROGBITS         0000000000000000  00001028
+        0000000000000057  0000000000000001  MS       0     0     1
+   [25] .shstrtab         STRTAB           0000000000000000  0000107f
+-       00000000000000d5  0000000000000000           0     0     1
+-  [26] .symtab           SYMTAB           0000000000000000  00001858
+-       00000000000003f0  0000000000000018          27    30     8
+-  [27] .strtab           STRTAB           0000000000000000  00001c48
+-       00000000000000ec  0000000000000000           0     0     1
++       00000000000000c5  0000000000000000           0     0     1
+ Key to Flags:
+   W (write), A (alloc), X (execute), M (merge), S (strings), l (large)
+   I (info), L (link order), G (group), T (TLS), E (exclude), x (unknown)
+@@ -171,51 +167,6 @@
+     12: 000000000000067c   115 FUNC    GLOBAL DEFAULT   11 my_main
+     13: 0000000000000728     0 FUNC    GLOBAL DEFAULT   12 _fini
+ 
+-Symbol table '.symtab' contains 42 entries:
+-   Num:    Value          Size Type    Bind   Vis      Ndx Name
+-     0: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+-     1: 00000000000001c8     0 SECTION LOCAL  DEFAULT    1 
+-     2: 0000000000000218     0 SECTION LOCAL  DEFAULT    2 
+-     3: 0000000000000258     0 SECTION LOCAL  DEFAULT    3 
+-     4: 00000000000003a8     0 SECTION LOCAL  DEFAULT    4 
+-     5: 0000000000000444     0 SECTION LOCAL  DEFAULT    5 
+-     6: 0000000000000460     0 SECTION LOCAL  DEFAULT    6 
+-     7: 0000000000000480     0 SECTION LOCAL  DEFAULT    7 
+-     8: 00000000000004e0     0 SECTION LOCAL  DEFAULT    8 
+-     9: 0000000000000540     0 SECTION LOCAL  DEFAULT    9 
+-    10: 0000000000000560     0 SECTION LOCAL  DEFAULT   10 
+-    11: 00000000000005b0     0 SECTION LOCAL  DEFAULT   11 
+-    12: 0000000000000728     0 SECTION LOCAL  DEFAULT   12 
+-    13: 0000000000000736     0 SECTION LOCAL  DEFAULT   13 
+-    14: 0000000000000748     0 SECTION LOCAL  DEFAULT   14 
+-    15: 0000000000000768     0 SECTION LOCAL  DEFAULT   15 
+-    16: 0000000000200e08     0 SECTION LOCAL  DEFAULT   16 
+-    17: 0000000000200e18     0 SECTION LOCAL  DEFAULT   17 
+-    18: 0000000000200e28     0 SECTION LOCAL  DEFAULT   18 
+-    19: 0000000000200e30     0 SECTION LOCAL  DEFAULT   19 
+-    20: 0000000000200fd0     0 SECTION LOCAL  DEFAULT   20 
+-    21: 0000000000200fe8     0 SECTION LOCAL  DEFAULT   21 
+-    22: 0000000000201020     0 SECTION LOCAL  DEFAULT   22 
+-    23: 0000000000201028     0 SECTION LOCAL  DEFAULT   23 
+-    24: 0000000000000000     0 SECTION LOCAL  DEFAULT   24 
+-    25: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS write_rev.c
+-    26: 0000000000200e20     0 OBJECT  LOCAL  DEFAULT   17 __DTOR_END__
+-    27: 0000000000201020     0 OBJECT  LOCAL  DEFAULT   22 __dso_handle
+-    28: 0000000000200e30     0 OBJECT  LOCAL  DEFAULT  ABS _DYNAMIC
+-    29: 0000000000200fe8     0 OBJECT  LOCAL  DEFAULT  ABS _GLOBAL_OFFSET_TABLE_
+-    30: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND putchar@@GLIBC_2.2.5
+-    31: 0000000000201028     0 NOTYPE  GLOBAL DEFAULT  ABS _edata
+-    32: 0000000000000728     0 FUNC    GLOBAL DEFAULT   12 _fini
+-    33: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND printf@@GLIBC_2.2.5
+-    34: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND __gmon_start__
+-    35: 0000000000201038     0 NOTYPE  GLOBAL DEFAULT  ABS _end
+-    36: 0000000000201028     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_start
+-    37: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND _Jv_RegisterClasses
+-    38: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND exit@@GLIBC_2.2.5
+-    39: 0000000000000000     0 FUNC    WEAK   DEFAULT  UND __cxa_finalize@@GLIBC_2.2
+-    40: 0000000000000540     0 FUNC    GLOBAL DEFAULT    9 _init
+-    41: 000000000000067c   115 FUNC    GLOBAL DEFAULT   11 my_main
+-
+ Histogram for bucket list length (total of 3 buckets):
+  Length  Number     % of total  Coverage
+       0  0          (  0.0%)
