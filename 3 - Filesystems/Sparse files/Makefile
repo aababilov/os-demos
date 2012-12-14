@@ -1,5 +1,5 @@
 CFLAGS += -Wall
-PROG := stat
+PROG := sparse
 
 all: $(PROG)
 

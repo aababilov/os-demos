@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "I am safe_script"
+read d
